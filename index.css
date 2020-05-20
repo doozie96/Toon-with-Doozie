@@ -1,0 +1,29 @@
+*{
+  font-family:'balsamiq sans';
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body,html{
+  height:100%;
+}
+.container{
+  background-image:linear-gradient(to bottom right,rgba(0,0,200,.5),rgba(0,0,100,.5) ),url('index.jpeg');
+  height:100%;
+  width:100%;
+}
+.formcontainer{
+  align-items: center;
+  padding: 40px;
+  position:relative;
+}
+h1,h3{
+  color: #fff;
+}
+input,textarea{
+  border:none;
+  background-color: rgba(255,255,255,.1);
+  width:100%;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
