@@ -12,7 +12,7 @@ var labelsubject=document.querySelector(".labelsubject");
 var labelquery=document.querySelector(".labelquery");
 const labels=[labelusername,labelemail,labelsubject,labelquery];
 
-function username1(){
-  lahelusername.style.top="50";
-}
+username.addEventListener('focus',() =>{ 
+  labelusername.style.top="40";
+});
 
