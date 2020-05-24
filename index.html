@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Doozie</title>
-    <link href="https://fonts.googlea pis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-<div class="container">
-   
-<div class="formcontainer">
-<form>
-    
-    <h1>toon with doozie</h1>
-    <h3>type your queries</h3>
-    
-  <div class="formcontrols">
-    <label class="labelusername" for="username">username</label>
-    <input onfocusout="username1()" name="username">
-  </div>
-  
-  <div class="formcontrols">
-    <label class="labelemail" for="email">email</label>
-    <input onfocusout="email1()" name="email">
-  </div>
-  
-  <div class="formcontrols">
-    <label class="labelsubject" for="subject">subject</label>
-    <input onfocusout="subject1()" name="subject">
-  </div>
-  
-  <div class="formcontrols">
-    <label class="labelquery"  for="query"> queries </label>
-    <textarea onfocusout="query1()" name="query">
-    </textarea>
-  </div>
-  
-  <div class="submit">
-    <input type="submit" value="submit">
-  </div>
-  
-</form>
-</div>
 
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doozie</title>
+  <link href="https://fonts.googlea pis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="formcontainer">
+      <form>
+        <h1>toon with doozie</h1>
+        <h3>type your queries</h3>
+        
+        <div class="formcontrols">
+          <input class="username" onfocusout="username1()" name="username" required>
+          <label class="labelusername" for="username">username</label>
+        </div>
+        
+        <div class="formcontrols">
+          <input class="email" onfocusout="email1()" name="email" required>
+          <label class="labelemail" for="email">email</label>
+        </div>
+        
+        <div class="formcontrols">
+          <input class="subject" onfocusout="subject1()" name="subject" required>
+          <label class="labelsubject" for="subject">subject</label>
+        </div>
+        
+        <div class="formcontrols">
+          <textarea class="query" onfocusout="query1()" name="query" required>
+          </textarea>
+          <label class="labelquery" for="query"> queries </label>
+        </div>
+        
+        <div class="submit">
+          <input type="submit" value="submit">
+        </div>
+        
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
