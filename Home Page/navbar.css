@@ -10,6 +10,7 @@
   width:70%;
   padding:5% 15%;
   transform:translateX(100%);
+  overflow: hidden;
 }
 .navicon1
 {
@@ -69,25 +70,33 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 {
   display: flex;
   flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
   width:100%;
   margin-top: 15px;
 }
 .iconcontainer
 {
   background-color:#fff;
-  border-radius:50%;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-  padding:10px;
-  width:33%;
-  height:33%;
-  position: relative;
-  margin:2% 0  0 2%;
+  border-radius:100%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+  padding: 10px;
+  width:28%;
+  height:30%;
+  margin: 2% 0 0 2%;
 }
-.navbuttons:hover,.videobuttons:hover
+
+.navbuttons:hover,
+.videobuttons:hover
 {
   color:#fff;
   background:#180A0A;
   box-shadow: 7px 7px 5px rgba(200,99,99,0.2)
+}
+
+i
+{
+  font-size: 100%;
 }
 i:hover
 {
@@ -109,7 +118,7 @@ i:hover
 .activenavbar
 {
   transform: translateX(0%);
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
 .active1
 {
@@ -120,7 +129,7 @@ i:hover
 }
 .active2
 {
-  transform: rotate(135deg);
+  transform: rotate(-45deg);
   right:65%;
   top:35px;
   width:10%;

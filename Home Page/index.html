@@ -13,8 +13,11 @@
 </head>
 
 <body>
+<div class="wrapper">
   <div onClick="navopen()" class="navicon1"></div>
   <div onClick="navopen()" class="navicon2"></div>
+  
+  <!--Homepag3-->
   <div class="homepage">
     <div class="design"></div>
     <img class="logo" src="Logo.jpg">
@@ -31,11 +34,15 @@
       </h6>
     </div>
     <div class="buttons">
-      <button class="subscribe">Subscribe</button>
-      <br>
-      <button class="watchnow">Watch Now</button>
+      <button class="subscribe"><a class="awhite" href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">Subscribe</a></button>
+       <br>
+      <button class="watchnow"><a href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">Watch Now</a></button>
     </div>
   </div>
+  
+  
+  
+  <!--navigation bar -->
   <div class="navbar">
     <button class="navbuttons" id="about">About</button>
     <button class="navbuttons" id="videos" onclick="nest()">Videos</button>
@@ -43,22 +50,32 @@
       <button class="videobuttons" id="animations">Animations</button>
       <button class="videobuttons" id="tutorials">Tutorials</button>
     </div>
-    <button class="navbuttons" id="resources">Resources</button>
+    <button class="navbuttons" id="projects">Projects</button>
     <button class="navbuttons" id="apps">Apps</button>
     <button class="navbuttons" id="contact">Contact</button>
+    
     <div class="iconscontainer">
       <div class="iconcontainer">
-        <i class="fab fa-instagram"></i>
+        <a href="https://instagram.com/toonwithdoozie">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
       <div class="iconcontainer">
-        <i class="fab fa-reddit-alien"></i>
+        <a href="https://reddit.com/user/doozie96">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
       </div>
       <div class="iconcontainer">
-        <i class="fab fa-facebook-f" class="fb"></i>
+        <a href="https://facebook.com/toon.doozie.1">
+          <i class="fab fa-facebook-f" class="fb"></i>
+        </a>
       </div>
     </div>
   </div>
-  <script src="main.js"></script>
+  
+</div>
+
+<script src="main.js"></script>
 </body>
 
 </html>
