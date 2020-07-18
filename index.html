@@ -1,50 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doozie</title>
-  <link href="https://fonts.googlea pis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+  <title>HTML</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Comic+Neue:wght@400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/13518c5cbd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="formcontainer">
-      <form>
-        <h1>toon with doozie</h1>
-        <h3>type your queries</h3>
-        
-        <div class="formcontrols">
-          <input class="username" onfocusout="username1()" name="username" required>
-          <label class="labelusername" for="username">username</label>
-        </div>
-        
-        <div class="formcontrols">
-          <input class="email" onfocusout="email1()" name="email" required>
-          <label class="labelemail" for="email">email</label>
-        </div>
-        
-        <div class="formcontrols">
-          <input class="subject" onfocusout="subject1()" name="subject" required>
-          <label class="labelsubject" for="subject">subject</label>
-        </div>
-        
-        <div class="formcontrols">
-          <textarea class="query" onfocusout="query1()" name="query" required>
-          </textarea>
-          <label class="labelquery" for="query"> queries </label>
-        </div>
-        
-        <div class="submit">
-          <input type="submit" value="submit">
-        </div>
-        
-      </form>
+  <div onClick="navopen()" class="navicon1"></div>
+  <div onClick="navopen()" class="navicon2"></div>
+  <div class="homepage">
+    <div class="design"></div>
+    <img class="logo" src="Logo.jpg">
+    <div class="header">
+      <h4 class="toonwith">Toon with</h4>
+      <h1 class="doozie">Doozie</h1>
+    </div>
+    <div class="sub-header">
+      <h6>
+        Stick Fights, Animations,
+      </h6>
+      <h6>
+        Tutorials, and more!
+      </h6>
+    </div>
+    <div class="buttons">
+      <button class="subscribe">Subscribe</button>
+      <br>
+      <button class="watchnow">Watch Now</button>
     </div>
   </div>
+  <div class="navbar">
+    <button class="navbuttons" id="about">About</button>
+    <button class="navbuttons" id="videos" onclick="nest()">Videos</button>
+    <div class="video">
+      <button class="videobuttons" id="animations">Animations</button>
+      <button class="videobuttons" id="tutorials">Tutorials</button>
+    </div>
+    <button class="navbuttons" id="resources">Resources</button>
+    <button class="navbuttons" id="apps">Apps</button>
+    <button class="navbuttons" id="contact">Contact</button>
+    <div class="iconscontainer">
+      <div class="iconcontainer">
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="iconcontainer">
+        <i class="fab fa-reddit-alien"></i>
+      </div>
+      <div class="iconcontainer">
+        <i class="fab fa-facebook-f" class="fb"></i>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,132 @@
+.navbar
+{
+  position: absolute;
+  top:0;
+  right:0;
+  background-color:transparent;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width:70%;
+  padding:5% 15%;
+  transform:translateX(100%);
+}
+.navicon1
+{
+  width:10%;
+  height: 7px;
+  background-color:#111218;
+  border-radius:15%;
+  position: absolute;
+  right:20px;
+  top:20px;
+  z-index: 10;
+}
+.navicon2
+{
+  width:7%;
+  height:7px;
+  background-color:#111218;
+  border-radius:15%;
+  position: absolute;
+  right:20px;
+  top:35px;
+  z-index: 11;
+} 
+.navbuttons
+{
+  outline:none;
+  border:none;
+  margin-top: 15px;
+  background: #fff;
+  font-size: 17px;
+  height:50px;
+  width:100%;
+  border-radius:100px;
+  transition: all 200ms;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.video
+{
+  max-height:0;
+}
+.videobuttons
+{
+outline:none;
+border:none;
+margin-top: 15px;
+background: #fff;
+font-size: 17px;
+width:75%;
+height:50px;
+translate: 0.2s;
+border-radius:0 100px 100px 0;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* icons */
+.iconscontainer
+{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin-top: 15px;
+}
+.iconcontainer
+{
+  background-color:#fff;
+  border-radius:50%;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  padding:10px;
+  width:33%;
+  height:33%;
+  position: relative;
+  margin:2% 0  0 2%;
+}
+.navbuttons:hover,.videobuttons:hover
+{
+  color:#fff;
+  background:#180A0A;
+  box-shadow: 7px 7px 5px rgba(200,99,99,0.2)
+}
+i:hover
+{
+  color:#fff;
+}
+
+.iconcontainer:hover
+{
+  background-color: #A21212 ;
+}
+
+/*navigation toggle is active*/
+
+.activehomepage
+{
+  border-radius: 50px;
+  transform: translateX(-60%);
+}
+.activenavbar
+{
+  transform: translateX(0%);
+  transition-delay: 200ms;
+}
+.active1
+{
+  transform: rotate(45deg);
+  right:65%;
+  top:35px;
+  background-color: #D62525;
+}
+.active2
+{
+  transform: rotate(135deg);
+  right:65%;
+  top:35px;
+  width:10%;
+  background-color: #A91717;
+}
+.activenest
+{
+   max-height:200px;
+}
