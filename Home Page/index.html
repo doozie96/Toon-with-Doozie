@@ -17,37 +17,7 @@
   <div onClick="navopen()" class="navicon1"></div>
   <div onClick="navopen()" class="navicon2"></div>
   
-  
-  <!--Homepag3-->
-  <div class="homepage">
-    <div class="design"></div>
-    <img class="logo" src="Logo.jpg">
-    <div class="header">
-      <h4 class="toonwith">Toon with</h4>
-      <h1 class="doozie">Doozie</h1>
-    </div>
-    <div class="sub-header">
-      <h6>
-        Stick Fights, Animations,
-      </h6>
-      <h6>
-        Tutorials, and more!
-      </h6>
-    </div>
-    <div class="buttons">
-     <a href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">
-      <button class="subscribe">Subscribe</button>
-     </a>
-       <br>
-     <a href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">
-      <button class="watchnow">Watch Now</button>
-     </a>
-    </div>
-  </div>
-  
-  
-  
-  <!--navigation bar -->
+    <!--navigation bar -->
   <div class="navbar">
     <button class="navbuttons" id="about">About</button>
     <button class="navbuttons" id="videos" onclick="nest()">Videos</button>
@@ -77,30 +47,68 @@
       </div>
     </div>
   </div>
+
+  
+  <!--Homepag3-->
+  <div class="homepage">
+    <div class="design"></div>
+    <img class="logo" src="Logo.jpg">
+    <div class="header">
+      <h4 class="toonwith">Toon with</h4>
+      <h1 class="doozie">Doozie</h1>
+    </div>
+    <div class="sub-header">
+      <h6>
+        Stick Fights, Animations,
+      </h6>
+      <h6>
+        Tutorials, and more!
+      </h6>
+    </div>
+    <div class="buttons">
+     <a href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">
+      <button class="subscribe">Subscribe</button>
+     </a>
+       <br>
+     <a href="https://www.youtube.com/channel/UCHdwbazzBRfTa8-APEaCoGA">
+      <button class="watchnow">Watch Now</button>
+     </a>
+    </div>
+  
   
   
   <!--Contact-->
-  <form>
-   <div>
-    <label class="usernamelabel">
-      <input class="username">
+  <form onsubmit="sendemail()">
+    
+   <div class="inputholder">
+    <input class="inputs">
+    <label class="labels">
+      Username
     </label>
    </div>
-   <div>
-    <label class="emaillabel">
-      <input class="email">
+   
+   <div class="inputholder">
+    <input class="inputs" type="email">
+    <label class="labels">
+      Email
     </label>
    </div>
-   <div>
-    <label class="messagelabel">
-      <input class="message">
+   
+   <div class="inputholder">
+    <input class="inputs">
+    <label class="labels">
+      Type your message
     </label>
    </div>
-   <div>
-     <label class="message">
-       <input type="button">
-     </label>
+   
+   <div class="inputholder">
+    <input type="submit" class="inputs">
+    <label class="labels" id="submit">
+      Send
+    </label>
    </div>
+   
+   
   </form>
   
   

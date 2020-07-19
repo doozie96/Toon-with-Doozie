@@ -8,3 +8,4 @@ function navopen() {
 function nest() {
   document.querySelector('.video').classList.toggle('activenest');
 }
+
